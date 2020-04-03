@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+.container-header {
+    /*background: url(img/seigaiha.png);*/
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container-header p {
+    padding-top: 10%;
+    text-align: center;
+    font-family: 'Homemade Apple', cursive;
+    font-style: italic;
+    font-size: 1em;
+    color: grey;
+
+    animation-name: fadeIn;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.typing-text {
+    padding-top: 20%;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.typing-text h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100px;
+    font-size: 4em;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.container-footer {
+    background-color: #f6546a;
+    box-shadow: 20px 20px yellow;
+    width: 15%;
+    height: 50px;
+
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+
+    text-align: center;
+    padding-top: 30px;
+}
+.container-footer p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .typing-text h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        height: 5px;
+        font-size: 2em;
+    }
+    .typing-text {
+        padding-top: 33vh;
+        text-align: center;
+    }
+    .container-footer {
+        background-color: #f6546a;
+        box-shadow: 20px 20px yellow;
+        width: 60%;
+        height: 50px;
+    
+        margin: auto;
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+    
+        text-align: center;
+        padding-top: 30px;
+    }
+  }
